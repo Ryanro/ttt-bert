@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ea0be21-958e-4a3d-b6a8-3a85f82e9c2a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1f2HbyU6OwGWnmVuc58QW6u59Fd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/augment_data/RTE" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/augment" />
+      <recent name="$PROJECT_DIR$/convert_file" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="augment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ttt-bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/augment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/augment/augment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ttt-bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ttt-bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.gg" />
+        <item itemvalue="Python.augment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ea0be21-958e-4a3d-b6a8-3a85f82e9c2a" name="Default Changelist" comment="" />
+      <created>1595409342119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595409342119</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="303" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595674763138">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="303" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1595674763138" />
+    <state x="471" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595674164377">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="471" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1595674164377" />
+    <state width="1652" height="3" key="GridCell.Tab.0.bottom" timestamp="1595737270069">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="3" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595737270069" />
+    <state width="1652" height="3" key="GridCell.Tab.0.center" timestamp="1595737270067">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="3" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595737270067" />
+    <state width="1652" height="3" key="GridCell.Tab.0.left" timestamp="1595737270066">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="3" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595737270066" />
+    <state width="1652" height="3" key="GridCell.Tab.0.right" timestamp="1595737270068">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="3" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595737270068" />
+    <state width="1652" height="348" key="GridCell.Tab.1.bottom" timestamp="1595680378370">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="348" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378370" />
+    <state width="1652" height="348" key="GridCell.Tab.1.center" timestamp="1595680378368">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="348" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378368" />
+    <state width="1652" height="348" key="GridCell.Tab.1.left" timestamp="1595680378365">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="348" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378365" />
+    <state width="1652" height="348" key="GridCell.Tab.1.right" timestamp="1595680378369">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="348" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378369" />
+    <state x="224" y="76" key="SettingsEditor" timestamp="1595674772970">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="224" y="76" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1595674772970" />
+  </component>
+</project>
