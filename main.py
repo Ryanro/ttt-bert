@@ -21,12 +21,12 @@ parser.add_argument('--model', default='bert-large-uncased')
 parser.add_argument('--batch_size', default=16, type=int)
 parser.add_argument('--workers', default=8, type=int)
 ########################################################################
-parser.add_argument('--epochs', default=100, type=int)
+parser.add_argument('--epochs', default=90, type=int)
 parser.add_argument('--max_seq_length', default=128, type=int)
 parser.add_argument('--start_epoch', default=1, type=int)
 parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                     help='momentum of SGD solver')
-parser.add_argument('--weight_decay', default=1e-4, type=float,
+parser.add_argument('--weight_decay', default=1e-5, type=float,
                     metavar='W', help='weight decay (default: 1e-4)')
 parser.add_argument('--print_freq', default=10, type=int)
 parser.add_argument('--lr', default=2e-5, type=float)
@@ -54,8 +54,6 @@ def train(trloader, epoch):
     ssh.train()
     batch_time = AverageMeter('Time', ':6.3f')
     data_time = AverageMeter('Data', ':6.3f')
-    losses_net = AverageMeter('Loss_net', ':.4e')
-    losses_ssh = AverageMeter('Loss_ssh', ':.4e')
     losses = AverageMeter('Loss', ':.4e')
     top1 = AverageMeter('Acc@1', ':6.2f')
     progress = ProgressMeter(len(trloader), batch_time, data_time, losses, top1,
@@ -76,8 +74,6 @@ def train(trloader, epoch):
         net_label_ids = net_label_ids.long()
         loss_cls = criterion(outputs_cls, net_label_ids)
         loss = loss_cls.mean()
-        loss_net = loss_cls.mean()
-        losses_net.update(loss_net.item(), len(net_label_ids))
         losses.update(loss.item(), len(net_label_ids))
 
         _, predicted = outputs_cls.max(1)
@@ -93,7 +89,6 @@ def train(trloader, epoch):
         ssh_label_ids = ssh_label_ids.long()
         loss_ssh = criterion(outputs_ssh, ssh_label_ids)
         loss += loss_ssh.mean()
-        losses_ssh.update(loss_ssh.item(), len(ssh_label_ids))
 
         loss.backward()
         optimizer.step()
@@ -128,5 +123,5 @@ for epoch in range(args.start_epoch, args.epochs+1):
     plot_epochs(all_err_cls, all_err_ssh, args.outf + '/loss.pdf')
 
     state = {'args': args, 'err_cls': err_cls, 'err_ssh': err_ssh,
-             'optimizer': optimizer.state_dict(), 'net': net.state_dict(), 'head': head.state_dict()}
+             'optimizer': optimizer.state_dict(), 'net': net.state_dict(), 'ssh': ssh.state_dict()}
     torch.save(state, args.outf + '/ckpt.pth')

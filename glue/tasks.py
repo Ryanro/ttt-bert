@@ -106,9 +106,10 @@ class AugProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[0]
-            label = line[1]
+            text_b = line[1]
+            label = line[2]
             examples.append(
-                    InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+                    InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
         return examples
 
 

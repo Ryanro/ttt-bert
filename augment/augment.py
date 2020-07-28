@@ -24,7 +24,7 @@ def augment_single_with_label(method_label):
 
 ori_df = pd.read_csv('../RTE/dev.tsv', sep='\t')
 
-aug_df = pd.DataFrame(columns=["sentence", "label"])
+aug_df = pd.DataFrame(columns=["sentence1","sentence2", "label"])
 
 for i in ori_df.sentence1:
     ori_sentence = i
@@ -34,7 +34,7 @@ for i in ori_df.sentence1:
 
     aug_sentences = eda(ori_sentence, alpha=0.1, num_aug=1, method=method)
     for aug_sentence in aug_sentences:
-        aug_df = aug_df.append({'sentence': aug_sentence, 'label': method}, ignore_index=True)
+        aug_df = aug_df.append({'sentence1': ori_sentence,'sentence2': aug_sentence, 'label': method}, ignore_index=True)
 
 print("generated augmented sentences finished.")
 
