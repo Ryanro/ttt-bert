@@ -4,9 +4,76 @@
 #@Author: Zechen Li
 #@File  : test_helpers.py
 import time
-import torch
-import torch.nn as nn
 from utils.misc import *
+from utils.train_helpers import *
+
+
+def prepare_test_data(args):
+    print('Preparing net evaluating data...')
+    tokenizer = AutoTokenizer.from_pretrained(args.model)
+
+    net_task = get_task(args.task_name, args.dataroot)
+
+    net_examples = net_task.get_dev_examples()
+
+    net_label_list = net_task.get_labels()
+    net_label_map = {label: i for i, label in enumerate(net_label_list)}
+
+    net_input_ids = []
+    net_input_masks = []
+    net_segment_ids = []
+    net_label_ids = []
+
+    for (ex_index, example) in enumerate(net_examples):
+        net_input_id, net_input_mask, net_segment_id, net_label_id = \
+            convert_example_to_feature(example, tokenizer, args.max_seq_length, net_label_map)
+        net_input_ids.append(net_input_id)
+        net_input_masks.append(net_input_mask)
+        net_segment_ids.append(net_segment_id)
+        net_label_ids.append(net_label_id)
+
+    net_input_ids = torch.tensor(net_input_ids)
+    net_input_masks = torch.tensor(net_input_masks)
+    net_segment_ids = torch.tensor(net_segment_ids)
+    net_label_ids = torch.tensor(net_label_ids)
+
+    net_teset = torch.utils.data.TensorDataset(net_input_ids, net_input_masks, net_segment_ids, net_label_ids)
+
+    net_teloader = torch.utils.data.DataLoader(net_teset, batch_size=args.batch_size, shuffle=True,
+                                               num_workers=args.workers, pin_memory=True)
+
+    print('Preparing ssh evaluating data...')
+
+    ssh_task = get_task('aug', args.aug_dataroot)
+
+    ssh_examples = ssh_task.get_dev_examples()
+
+    ssh_label_list = ssh_task.get_labels()
+    ssh_label_map = {label: i for i, label in enumerate(ssh_label_list)}
+
+    ssh_input_ids = []
+    ssh_input_masks = []
+    ssh_segment_ids = []
+    ssh_label_ids = []
+
+    for (ex_index, example) in enumerate(ssh_examples):
+        ssh_input_id, ssh_input_mask, ssh_segment_id, ssh_label_id = \
+            convert_example_to_feature(example, tokenizer, args.max_seq_length, ssh_label_map)
+        ssh_input_ids.append(ssh_input_id)
+        ssh_input_masks.append(ssh_input_mask)
+        ssh_segment_ids.append(ssh_segment_id)
+        ssh_label_ids.append(ssh_label_id)
+
+    ssh_input_ids = torch.tensor(ssh_input_ids)
+    ssh_input_masks = torch.tensor(ssh_input_masks)
+    ssh_segment_ids = torch.tensor(ssh_segment_ids)
+    ssh_label_ids = torch.tensor(ssh_label_ids)
+
+    ssh_teset = torch.utils.data.TensorDataset(ssh_input_ids, ssh_input_masks, ssh_segment_ids, ssh_label_ids)
+
+    ssh_teloader = torch.utils.data.DataLoader(ssh_teset, batch_size=args.batch_size, shuffle=True,
+                                               num_workers=args.workers, pin_memory=True)
+    return net_teset, net_teloader, ssh_teset, ssh_teloader
 
 
 def test(teloader, model, verbose=False, print_freq=10):

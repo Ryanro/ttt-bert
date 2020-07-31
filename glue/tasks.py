@@ -2,7 +2,7 @@ import csv
 import os
 import logging
 
-from .core import InputExample
+from utils.utils import InputExample
 
 logger = logging.getLogger(__name__)
 
@@ -94,6 +94,10 @@ class AugProcessor(DataProcessor):
         return self._create_examples(
             self._read_tsv(os.path.join(data_dir, "augment_dev.tsv")), "dev")
 
+    def get_aug_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(data_dir, "train")
+
     def get_labels(self):
         """See base class."""
         return ["sr", "ri", "rs", "rd"]
@@ -106,10 +110,10 @@ class AugProcessor(DataProcessor):
                 continue
             guid = "%s-%s" % (set_type, i)
             text_a = line[0]
-            text_b = line[1]
-            label = line[2]
+            # text_b = line[1]
+            label = line[1]
             examples.append(
-                    InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+                    InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
 
 
@@ -671,6 +675,9 @@ class Task:
 
     def get_test_examples(self):
         return self.processor.get_test_examples(self.data_dir)
+
+    def get_aug_examples(self):
+        return self.processor.get_aug_examples(self.data_dir)
 
     def get_labels(self):
         return self.processor.get_labels()

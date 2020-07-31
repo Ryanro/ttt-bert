@@ -2,11 +2,39 @@
 # -*- coding:utf-8 -*-
 # @Time  : 2020/7/24 10:24 PM
 # @Author: Zechen Li
-# @File  : utils.py.py
+# @File  : utils.py
 
-import csv
-import os
-from glue.runners import InputExample, tokenize_example
+
+class InputExample(object):
+    """A single training/test example for simple sequence classification."""
+
+    def __init__(self, guid, text_a, text_b=None, label=None):
+        """Constructs a InputExample.
+
+        Args:
+            guid: Unique id for the example.
+            text_a: string. The untokenized text of the first sequence. For single
+            sequence tasks, only this sequence must be specified.
+            text_b: (Optional) string. The untokenized text of the second sequence.
+            Only must be specified for sequence pair tasks.
+            label: (Optional) string. The label of the example. This should be
+            specified for train and dev examples, but not for test examples.
+        """
+        self.guid = guid
+        self.text_a = text_a
+        self.text_b = text_b
+        self.label = label
+
+    def new(self, **new_kwargs):
+        kwargs = {
+            "guid": self.guid,
+            "text_a": self.text_a,
+            "text_b": self.text_b,
+            "label": self.label,
+        }
+        for k, v in new_kwargs.items():
+            kwargs[k] = v
+        return self.__class__(**kwargs)
 
 
 def truncate_seq_pair(tokens_a, tokens_b, max_length):
@@ -74,4 +102,40 @@ def convert_example_to_feature(example, tokenizer, max_seq_length, label_map):
         label_id = label_map[example.label]
 
     return input_ids, input_mask, segment_ids, label_id
+
+
+class TokenizedExample(object):
+    def __init__(self, guid, tokens_a, tokens_b=None, label=None):
+        self.guid = guid
+        self.tokens_a = tokens_a
+        self.tokens_b = tokens_b
+        self.label = label
+
+    def new(self, **new_kwargs):
+        kwargs = {
+            "guid": self.guid,
+            "tokens_a": self.tokens_a,
+            "tokens_b": self.tokens_b,
+            "label": self.label,
+        }
+        for k, v in new_kwargs.items():
+            kwargs[k] = v
+        return self.__class__(**kwargs)
+
+
+def tokenize_example(example, tokenizer):
+    tokens_a = tokenizer.tokenize(example.text_a)
+    if example.text_b:
+        tokens_b = tokenizer.tokenize(example.text_b)
+    else:
+        tokens_b = example.text_b
+    return TokenizedExample(
+        guid=example.guid,
+        tokens_a=tokens_a,
+        tokens_b=tokens_b,
+        label=example.label,
+    )
+
+
+
 

@@ -2,13 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea0be21-958e-4a3d-b6a8-3a85f82e9c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/augment/augment.py" beforeDir="false" afterPath="$PROJECT_DIR$/augment/augment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/augment/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/augment/eda.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/augment_data/RTE/augment_dev.tsv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/augment_data/RTE/augment_train.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/adv_masker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/evaluate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/format_for_glue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/masked_runners.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/model_setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/runners.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/glue/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/glue/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glue/train_multitask.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/convert_gpt2_checkpoint_to_pytorch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/convert_openai_checkpoint_to_pytorch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/convert_tf_checkpoint_to_pytorch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/convert_transfo_xl_checkpoint_to_pytorch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/file_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/modeling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/modeling_gpt2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/modeling_openai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/modeling_transfo_xl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/modeling_transfo_xl_utilities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/optimization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/optimization_openai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/tokenization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/tokenization_gpt2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/tokenization_openai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/tokenization_transfo_xl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch_pretrained_bert/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/initialization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/log_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/model_setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/runners.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/test_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/train_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/train_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +76,44 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/adapt_data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/augment_data/RTE" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/augment_data" />
       <recent name="$PROJECT_DIR$/augment" />
       <recent name="$PROJECT_DIR$/convert_file" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/adapt_data" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Python.augment">
+    <configuration name="augment (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ttt-bert" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/augment_data/augment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/augment_data/augment/augment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="augment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ttt-bert" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="gg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ttt-bert" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,7 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,9 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.augment" />
+        <item itemvalue="Python.dd" />
+        <item itemvalue="Python.augment (1)" />
         <item itemvalue="Python.sss" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.gg" />
       </list>
     </recent_temporary>
   </component>
@@ -168,41 +230,49 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="471" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1595674164377" />
-    <state width="1652" height="213" key="GridCell.Tab.0.bottom" timestamp="1595776250533">
+    <state x="514" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596006053235">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="213" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595776250533" />
-    <state width="1652" height="213" key="GridCell.Tab.0.center" timestamp="1595776250532">
+    <state x="514" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1596006053235" />
+    <state width="1652" height="217" key="GridCell.Tab.0.bottom" timestamp="1596173178018">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="213" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595776250532" />
-    <state width="1652" height="213" key="GridCell.Tab.0.left" timestamp="1595776250531">
+    <state width="1652" height="217" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596173178018" />
+    <state width="1652" height="217" key="GridCell.Tab.0.center" timestamp="1596173178017">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="213" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595776250531" />
-    <state width="1652" height="213" key="GridCell.Tab.0.right" timestamp="1595776250533">
+    <state width="1652" height="217" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596173178017" />
+    <state width="1652" height="217" key="GridCell.Tab.0.left" timestamp="1596173178015">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="213" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595776250533" />
-    <state width="1652" height="348" key="GridCell.Tab.1.bottom" timestamp="1595680378370">
+    <state width="1652" height="217" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596173178015" />
+    <state width="1652" height="217" key="GridCell.Tab.0.right" timestamp="1596173178017">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="348" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378370" />
-    <state width="1652" height="348" key="GridCell.Tab.1.center" timestamp="1595680378368">
+    <state width="1652" height="217" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596173178017" />
+    <state width="1652" height="348" key="GridCell.Tab.1.bottom" timestamp="1596173119924">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="348" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378368" />
-    <state width="1652" height="348" key="GridCell.Tab.1.left" timestamp="1595680378365">
+    <state width="1652" height="348" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596173119924" />
+    <state width="1652" height="348" key="GridCell.Tab.1.center" timestamp="1596173119923">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="348" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378365" />
-    <state width="1652" height="348" key="GridCell.Tab.1.right" timestamp="1595680378369">
+    <state width="1652" height="348" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596173119923" />
+    <state width="1652" height="348" key="GridCell.Tab.1.left" timestamp="1596173119922">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="348" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1595680378369" />
+    <state width="1652" height="348" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596173119922" />
+    <state width="1652" height="348" key="GridCell.Tab.1.right" timestamp="1596173119924">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="348" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596173119924" />
     <state x="224" y="76" key="SettingsEditor" timestamp="1595674772970">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="224" y="76" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1595674772970" />
+    <state x="419" y="15" width="840" height="1034" key="search.everywhere.popup" timestamp="1595921783196">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="419" y="15" width="840" height="1034" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1595921783196" />
   </component>
 </project>

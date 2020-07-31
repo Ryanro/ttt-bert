@@ -153,6 +153,17 @@ def random_insertion(words, n):
 		add_word(new_words)
 	return new_words
 
+def augment_single_with_label(method_label):
+    if method_label == 0:
+        method = 'sr'
+    elif method_label == 1:
+        method = 'ri'
+    elif method_label == 2:
+        method = 'rs'
+    else:
+        method = 'rd'
+    return method
+
 def add_word(new_words):
 	synonyms = []
 	counter = 0
